@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <title>Hello from AWS Lambda!</title>
+    <style type="text/css">
+        @font-face {
+            font-family: "sans-serif";
+        }
+
+        body {
+            margin: 0;
+            font-family: "Amazon Ember", Helvetica, Arial, sans-serif;
+        }
+
+        h1 {
+            background-color: #232f3e;
+            color: white;
+            font-size: 3rem;
+            font-weight: 300;
+            margin: 0;
+            padding: 1rem;
+            text-align: center;
+        }
+
+
+        input[type="text"] {
+            font-family: "Amazon Ember", Helvetica, Arial, sans-serif;
+            flex-grow: 1;
+            border: 1px solid #aab7b8;
+            border-radius: 2px;
+            color: #16191f;
+        }
+
+        input[type="text"]:focus {
+            border: 1px solid #00a1c9;
+            box-shadow: 0 0 0 1px #00a1c9;
+            outline: 2px dotted transparent;
+        }
+
+        form {
+            display: flex;
+            flex-direction: row;
+            gap: 1rem;
+            padding-right: 3rem;
+        }
+
+        input[type="submit"] {
+            background-color: white;
+            border: 1px solid #545b64;
+            border-radius: 2px;
+            color: #545b64;
+            cursor: pointer;
+            font-weight: 700;
+            padding: .4rem 2rem;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #f2f3f3;
+            border: 1px solid #16191f;
+            color: #16191f;
+        }
+
+    </style>
+</head>
+<body>
+<h1>PS Self Serve Portal</h1>
+
+<form action="/" method="GET">
+    <input name="name"  placeholder="name" label="name">
+    <input name="location" placeholder="location" label="location">
+    <input type="submit" value="submit">
+</form>
+{formResults}
+{debug}
+
+</body>
+</html>
